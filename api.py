@@ -2,8 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
-from pyngrok import ngrok
-import nest_asyncio
 from nltk.stem import WordNetLemmatizer
 from nltk import data
 import joblib
@@ -72,7 +70,5 @@ async def root_post(text: Data):
     return {"prediction": prediction}
 
 
-# ngrok_tunnel = ngrok.connect(8080)
-# print("Public URL:", ngrok_tunnel.public_url)
-# nest_asyncio.apply()
+
 uvicorn.run(app, port=4769)
