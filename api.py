@@ -74,4 +74,4 @@ async def root_post(text: Data):
 
 PORT = int(sys.argv[-1].split("=")[1]
            ) if sys.argv[-1].startswith("--port") else 8080
-uvicorn.run(app, host="0.0.0.0", port=PORT, reload=True)
+uvicorn.run(app, host="0.0.0.0", port=PORT)
