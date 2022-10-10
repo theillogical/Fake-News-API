@@ -206,6 +206,7 @@ Send2Trash @ file:///tmp/build/80754af9/send2trash_1607525499227/work
 simplegeneric==0.8.1
 singledispatch @ file:///tmp/build/80754af9/singledispatch_1614366001199/work
 six @ file:///opt/concourse/worker/volumes/live/5b31cb27-1e37-4ca5-6e9f-86246eb206d2/volume/six_1605205320872/work
+sklearn==0.0
 smart-open==6.0.0
 sniffio @ file:///opt/concourse/worker/volumes/live/1faeb672-6d3f-4f1f-7861-294fcf282962/volume/sniffio_1614030462215/work
 snowballstemmer @ file:///tmp/build/80754af9/snowballstemmer_1611258885636/work
