@@ -71,4 +71,4 @@ async def root_post(text: Data):
 
 
 
-uvicorn.run(app, port=4769)
+#uvicorn.run(app, port=4769)
