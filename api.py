@@ -5,6 +5,7 @@ import uvicorn
 from nltk.stem import WordNetLemmatizer
 from nltk import data
 import joblib
+import sys
 
 data.path.append('C:\\Users\\sarth\\Downloads\\news detection\\nltk_data\\')
 
@@ -71,4 +72,6 @@ async def root_post(text: Data):
 
 
 
-#uvicorn.run(app, port=4769)
+PORT = int(sys.argv[-1].split("=")[1]
+           ) if sys.argv[-1].startswith("--port") else 8080
+uvicorn.run(app, host="0.0.0.0", port=PORT, workers=4)
